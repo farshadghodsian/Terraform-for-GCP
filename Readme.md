@@ -8,22 +8,26 @@ When running outside of cloud shell you should use the demo/gcp-simple-environme
 
 
 # Running the Terraform Deployment
+1 - First to get started you will need to clone this repoisitory to your local computer or cloud shell
 
-1 - Regardless of which one you pick (cloud-shell or demo) you will need to navigate into that folder and initialize Terraform so that it can download the required Google privider plugin
+<code>git clone https://github.com/learning-automation/Terraform-for-GCP.git</code>
 
+2 - Regardless of which one you pick (cloud-shell or demo) you will need to navigate into that folder and initialize Terraform so that it can download the required Google privider plugin
+
+<code>cd demo  (or cd cloud-shell)</code><br/>
 <code>terraform init</code>
 
-2 - Once it has been initialized you will notice that a new .terraform directory has been created. Leave this folder alone as terraform will manage it on it's own. Next run the terraform plan file to review the changes
+3 - Once it has been initialized you will notice that a new .terraform directory has been created. Leave this folder alone as terraform will manage it on it's own. Next run the terraform plan file to review the changes
 
 <code>terraform plan --out test.plan </code>
 
 This will also output the plan to a file. It is always good practice to run the apply command using a plan file in case the .tf file has been changed by someone else before you actually have applied to plan to your environment. Not using a plan file can lead to some unforseen consequences.
 
-3 - Apply the Terraform plan to your environment in GCP. If not using a plan file Terraform will prompt you to review and confirm the details before executing the deployment
+4 - Apply the Terraform plan to your environment in GCP. If not using a plan file Terraform will prompt you to review and confirm the details before executing the deployment
 
 <code>terraform apply test.plan </code>
 
-4 - To tear down your environment after you are done with the test environment use the terraform destroy command
+5 - To tear down your environment after you are done with the test environment use the terraform destroy command
 
 <code>terraform destroy </code>
 
