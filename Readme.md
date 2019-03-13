@@ -10,7 +10,8 @@ When running outside of cloud shell you should use the demo/gcp-simple-environme
 # Running the Terraform Deployment
 1 - First to get started you will need to clone this repoisitory to your local computer or cloud shell
 
-<code>git clone https://github.com/learning-automation/Terraform-for-GCP.git</code>
+<code>git clone https://github.com/learning-automation/Terraform-for-GCP.git</code><br/>
+<code>cd Terraform-for-GCP</code>
 
 2 - Regardless of which one you pick (cloud-shell or demo) you will need to navigate into that folder and initialize Terraform so that it can download the required Google privider plugin
 
