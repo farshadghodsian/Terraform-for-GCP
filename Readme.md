@@ -29,3 +29,7 @@ This will also output the plan to a file. It is always good practice to run the 
 
 
 There are many more features that terraform offers, but this should be enough to get you started on using Terraform. Have fun!
+
+
+For more information on the Terrafor GCP provider check out the documentation below:
+https://www.terraform.io/docs/providers/google/index.html
