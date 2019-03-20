@@ -3,3 +3,5 @@
 *.backup
 *.plan
 *.info
+webserver/hostname-script.sh
+webserver/apache-mystartupscript.sh
